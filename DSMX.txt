@@ -1,6 +1,8 @@
 
 
-# DUMP
+CLI
+
+# dump
 # Betaflight / BETAFLIGHTF3 (BFF3) 3.2.0 Sep 28 2017 / 16:16:50 (ceb6f70) MSP API: 1.36
 name BETAFPV
 resource BEEPER 1 C15
@@ -136,7 +138,7 @@ beeper ARMED
 beeper SYSTEM_INIT
 beeper ON_USB
 beeper BLACKBOX_ERASE
-map TAER1234
+map AETR1234
 serial 20 1 115200 57600 0 115200
 serial 0 32 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
@@ -237,10 +239,10 @@ mode_color 6 8 0
 mode_color 6 9 0
 mode_color 6 10 0
 mode_color 7 0 3
-aux 0 0 0 900 1400
-aux 1 1 0 900 1400
-aux 2 19 1 900 1700
-aux 3 28 1 900 1300
+aux 0 0 0 1300 2100
+aux 1 1 0 1300 2100
+aux 2 0 0 900 900
+aux 3 0 0 900 900
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
@@ -342,7 +344,7 @@ set blackbox_p_ratio = 32
 set blackbox_device = SDCARD
 set blackbox_on_motor_test = OFF
 set blackbox_record_acc = ON
-set min_throttle = 1050
+set min_throttle = 1070
 set max_throttle = 2000
 set min_command = 1000
 set dshot_idle_value = 450
@@ -362,11 +364,11 @@ set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
 set gimbal_mode = NORMAL
-set bat_capacity = 0
-set vbat_max_cell_voltage = 43
+set bat_capacity = 200
+set vbat_max_cell_voltage = 44
 set vbat_full_cell_voltage = 41
-set vbat_min_cell_voltage = 33
-set vbat_warning_cell_voltage = 35
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 31
 set vbat_hysteresis = 1
 set current_meter = ADC
 set battery_meter = ADC
@@ -384,7 +386,7 @@ set beeper_inversion = ON
 set beeper_od = OFF
 set beeper_frequency = 0
 set beeper_dshot_beacon_tone = 0
-set yaw_motors_reversed = ON
+set yaw_motors_reversed = OFF
 set 3d_deadband_low = 1406
 set 3d_deadband_high = 1514
 set 3d_neutral = 1460
@@ -431,55 +433,55 @@ set osd_alt_alarm = 100
 set osd_ah_max_pit = 20
 set osd_ah_max_rol = 40
 set osd_tim1 = 2560
-set osd_tim2 = 2561
-set osd_vbat_pos = 2092
-set osd_rssi_pos = 2088
-set osd_tim_1_pos = 2102
-set osd_tim_2_pos = 2081
-set osd_flymode_pos = 2381
-set osd_throttle_pos = 2273
-set osd_vtx_channel_pos = 2425
+set osd_tim2 = 513
+set osd_vbat_pos = 2403
+set osd_rssi_pos = 40
+set osd_tim_1_pos = 54
+set osd_tim_2_pos = 2422
+set osd_flymode_pos = 333
+set osd_throttle_pos = 225
+set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2248
-set osd_ah_sbar = 2248
+set osd_ah_sbar = 200
 set osd_ah_pos = 2248
-set osd_current_pos = 2433
-set osd_mah_drawn_pos = 2401
-set osd_craft_name_pos = 2410
-set osd_gps_speed_pos = 2266
-set osd_gps_lon_pos = 2130
-set osd_gps_lat_pos = 2113
-set osd_gps_sats_pos = 2099
-set osd_home_dir_pos = 2350
-set osd_home_dist_pos = 2351
-set osd_compass_bar_pos = 2314
-set osd_altitude_pos = 2295
-set osd_pid_roll_pos = 2471
-set osd_pid_pitch_pos = 2503
-set osd_pid_yaw_pos = 2535
-set osd_debug_pos = 2049
-set osd_power_pos = 2369
-set osd_pidrate_profile_pos = 2393
-set osd_warnings_pos = 2377
-set osd_avg_cell_voltage_pos = 2124
-set osd_pit_ang_pos = 2305
-set osd_rol_ang_pos = 2337
-set osd_battery_usage_pos = 2440
-set osd_disarmed_pos = 2186
-set osd_nheading_pos = 2359
-set osd_nvario_pos = 2327
-set osd_esc_tmp_pos = 2130
-set osd_esc_rpm_pos = 2131
-set osd_stat_max_spd = ON
+set osd_current_pos = 385
+set osd_mah_drawn_pos = 353
+set osd_craft_name_pos = 2412
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 42
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 423
+set osd_pid_pitch_pos = 455
+set osd_pid_yaw_pos = 487
+set osd_debug_pos = 1
+set osd_power_pos = 321
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2186
+set osd_avg_cell_voltage_pos = 76
+set osd_pit_ang_pos = 33
+set osd_rol_ang_pos = 65
+set osd_battery_usage_pos = 392
+set osd_disarmed_pos = 2315
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
 set osd_stat_max_dist = OFF
 set osd_stat_min_batt = ON
-set osd_stat_min_rssi = ON
-set osd_stat_max_curr = ON
-set osd_stat_used_mah = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_used_mah = OFF
 set osd_stat_max_alt = OFF
-set osd_stat_bbox = ON
-set osd_stat_endbatt = OFF
-set osd_stat_bb_no = ON
-set osd_stat_tim_1 = OFF
+set osd_stat_bbox = OFF
+set osd_stat_endbatt = ON
+set osd_stat_bb_no = OFF
+set osd_stat_tim_1 = ON
 set osd_stat_tim_2 = ON
 set task_statistics = ON
 set debug_mode = NONE
@@ -555,7 +557,7 @@ rateprofile 0
 
 set rc_rate = 100
 set rc_rate_yaw = 100
-set rc_expo = 50
+set rc_expo = 0
 set rc_expo_yaw = 0
 set thr_mid = 50
 set thr_expo = 0
